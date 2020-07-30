@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        StackWithBackingArray stack = new StackWithBackingArray(new Employee[5]);
+        StackWithBackingArray stack = new StackWithBackingArray(5);
         Employee employee = new Employee("Pat", "johnson", 1);
         Employee employee1 = new Employee("John", "Dope", 12);
         Employee employee2 = new Employee("Damian", "Wajda", 123);
@@ -22,6 +22,7 @@ public class Main {
         stack.push(employee6);
         System.out.println(Arrays.toString(stack.getEmployeeStack()) + " SIZE : " + stack.getEmployeeStack().length);
 
+        System.out.println(stack.peek());
 
     }
 }
